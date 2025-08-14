@@ -1,0 +1,34 @@
+newWebhook: 新建 Webhook
+webhookCreated: Webhook 创建成功
+webhookUpdated: Webhook 更新成功
+webhookDeleted: Webhook 删除成功
+triggers:
+  artifactCreation: '制品创建'
+  artifactDeletion: '制品删除'
+  artifactModification: '制品修改'
+table:
+  columns:
+    name: Webhook
+    trigger: Event
+  noWebhooksTitle: 暂无可用 Webhook
+formFields:
+  name: 名称
+  id: 编号
+  description: 描述
+  url: 请求地址
+  secret: 密钥
+  triggerLabel: 您希望哪些事件触发此 Webhook?
+  allTrigger: 接收所有事件
+  customTrigger: 接收选定的事件
+  SSLVerification: SSL 验证
+  enableSSLVerification: 启用 SSL 验证
+  advanced: 高级
+  extraHeader: 键
+  extraHeaderPlaceholder: 输入键
+  extraValue: 值
+  extraValuePlaceholder: 输入值
+  addNewKeyValuePair: 添加新键值对
+  enabled: 启用
+deleteModal:
+  title: 删除 Webhook
+  message: 确定要删除此 Webhook 吗?
