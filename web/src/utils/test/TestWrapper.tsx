@@ -47,7 +47,7 @@ export default function TestWrapper(props: PropsWithChildren<TestWrapperProps>) 
     standalone = false,
     routingId = '',
     space = '',
-    lang = 'en',
+    lang = 'zh',
     currentUser = defaultCurrentUser,
     currentUserProfileURL = '',
     defaultSettingsURL = '',

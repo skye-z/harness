@@ -42,7 +42,7 @@ const App: React.FC<AppProps> = React.memo(function App({
   standalone = false,
   space = '',
   routes = _routes,
-  lang = 'en',
+  lang = 'zh',
   on401 = handle401,
   children,
   hooks,

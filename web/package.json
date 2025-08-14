@@ -194,6 +194,12 @@
         "en-US",
         "en-IN",
         "en-UK"
+      ],
+      "zh": [
+        "zh",
+        "zh-CN",
+        "zh-TW",
+        "zh-HK"
       ]
     }
   }

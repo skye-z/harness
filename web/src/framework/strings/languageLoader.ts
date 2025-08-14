@@ -17,14 +17,20 @@
 import cdeStringRecords from 'cde-gitness/strings/strings.en.yaml'
 import stringsRecordsEN from '../../i18n/strings.en.yaml'
 import stringsRecordsES from '../../i18n/strings.es.yaml'
+import stringsRecordsZH from '../../i18n/strings.zh.yaml'
 
-export type LangLocale = 'es' | 'en' | 'en-IN' | 'en-US' | 'en-UK'
+export type LangLocale = 'es' | 'en' | 'en-IN' | 'en-US' | 'en-UK' | 'zh' | 'zh-CN' | 'zh-TW' | 'zh-HK'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type LanguageRecord = Record<string, Record<string, any>>
 
 export function languageLoader(langId: LangLocale = 'en'): LanguageRecord {
   switch (langId) {
+    case 'zh':
+    case 'zh-CN':
+    case 'zh-TW':
+    case 'zh-HK':
+      return stringsRecordsZH
     case 'es':
       return stringsRecordsES
     case 'en':
